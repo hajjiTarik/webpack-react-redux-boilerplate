@@ -4,6 +4,7 @@ var conf = require('../config');
 
 const common = () => ({
   plugins: [
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.DefinePlugin({
       APP_VERSION: JSON.stringify(conf.version),
       'process.env': {
@@ -49,6 +50,6 @@ module.exports = {
     common()
   ),
   dev: () => (
-    devPlugins()
+    merge([common(), devPlugins()])
   ),
 };

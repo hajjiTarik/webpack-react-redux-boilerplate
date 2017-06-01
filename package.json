@@ -5,7 +5,7 @@
   "scripts": {
     "build:dev": "cross-env NODE_ENV=production webpack --hide-modules --progress --config build/webpackConfig/webpack.dev.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --hide-modules --progress --config build/webpackConfig/webpack.prod.config.js",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --progress --quiet --cache --config config/webpack.server.config.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --progress --quiet --cache --config build/webpackConfig/webpack.server.config.js",
     "lint": "eslint ./src/*/**.js"
   },
   "author": "Hajji Tarik",
