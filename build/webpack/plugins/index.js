@@ -38,6 +38,7 @@ const prodPlugins = () => ({
 const devPlugins = () => ({
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
   ],
 });
 

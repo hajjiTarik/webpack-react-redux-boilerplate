@@ -1,12 +1,19 @@
 module.exports = () => ({
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'stage-0'],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            babelrc: false,
+            presets: [
+              ['es2015', { modules: false }],
+              'react',
+              'stage-2',
+            ],
+          },
         },
       },
     ],

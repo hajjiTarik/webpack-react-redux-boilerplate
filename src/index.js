@@ -7,7 +7,7 @@ export class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <h1>Hello am fucking awesome</h1>
+        <h1>Hello am fucking awesomee </h1>
       </Provider>
     );
   }
