@@ -1,7 +1,12 @@
 # Webpack React Redux boilerplate
 
+### Technologies
 
-### WIP
+- React
+- Webpack2
+- Express
+- Redux
+- Babel
 
 ### Installation
 `
