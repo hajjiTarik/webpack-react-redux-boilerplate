@@ -4,7 +4,6 @@
 
 - React
 - Webpack2
-- Express
 - Redux
 - Babel
 
