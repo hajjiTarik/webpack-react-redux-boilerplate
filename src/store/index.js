@@ -1,4 +1,9 @@
 import { createStore } from 'redux';
 import reducer from './reducers';
 
-export default createStore(reducer, {});
+export function configStore() {
+  console.log(module.hot);
+
+  const store = createStore(reducer, {});
+  return store;
+}

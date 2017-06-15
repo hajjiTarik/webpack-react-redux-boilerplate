@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "buidl/bundle.js",
   "scripts": {
-    "build:dev": "cross-env NODE_ENV=production webpack --hide-modules --progress --config build/webpackConfig/webpack.dev.config.js",
+    "build:dev": "cross-env NODE_ENV=development webpack --hide-modules --progress --config build/webpackConfig/webpack.dev.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --hide-modules --progress --config build/webpackConfig/webpack.prod.config.js",
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --progress --quiet --cache --config build/webpackConfig/webpack.server.config.js",
     "lint": "eslint ./src/*/**.js"
@@ -12,10 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-core": "^6.3.15",
+    "babel-core": "^6.25.0",
     "babel-eslint": "^6.1.2",
     "babel-jest": "^18.0.0",
-    "babel-loader": "^6.2.0",
+    "babel-loader": "^7.0.0",
     "babel-plugin-check-es2015-constants": "^6.3.13",
     "babel-plugin-transform-es2015-arrow-functions": "^6.3.13",
     "babel-plugin-transform-es2015-block-scoped-functions": "^6.3.13",
@@ -38,6 +38,7 @@
     "babel-plugin-transform-es3-property-literals": "^6.5.0",
     "babel-plugin-transform-object-rest-spread": "^6.3.13",
     "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
@@ -66,9 +67,10 @@
     "exenv": "^1.2.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-hot-loader": "^3.0.0-beta.7",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
-    "webpack": "^2.4.1",
+    "webpack": "^2.6.1",
     "webpack-merge": "^4.1.0"
   },
   "directories": {

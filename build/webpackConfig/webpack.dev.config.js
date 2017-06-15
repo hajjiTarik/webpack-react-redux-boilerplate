@@ -7,6 +7,7 @@ var plugins = require('../webpack/plugins');
 module.exports = merge([
   entries.public(),
   loaders(),
+  { devtool: 'eval-source-map' },
   plugins.dev(),
   outputs.dev(),
 ]);

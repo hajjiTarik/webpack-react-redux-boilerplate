@@ -37,7 +37,7 @@ const prodPlugins = () => ({
 
 const devPlugins = () => ({
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(), // Enable HMR
     new webpack.NamedModulesPlugin(),
   ],
 });
@@ -51,6 +51,6 @@ module.exports = {
     common()
   ),
   dev: () => (
-    merge([common(), devPlugins()])
+    merge([devPlugins(), common()])
   ),
 };
