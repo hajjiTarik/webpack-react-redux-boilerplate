@@ -1,5 +1,7 @@
 # Webpack React Redux boilerplate
 
+[IMG_ALT](https://travis-ci.org/hajjiTarik/webpack-react-redux-boilerplate.svg?branch=master)
+
 This starter kit is designed to get you up and running with front-end technologies.
 
 ### Technologies
