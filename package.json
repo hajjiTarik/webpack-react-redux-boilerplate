@@ -6,7 +6,9 @@
     "build:dev": "cross-env NODE_ENV=development webpack --hide-modules --progress --config build/webpackConfig/webpack.dev.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --hide-modules --progress --config build/webpackConfig/webpack.prod.config.js",
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --progress --quiet --cache --config build/webpackConfig/webpack.server.config.js",
-    "lint": "eslint ./src/*/**.js"
+    "lint": "eslint ./src/*/**.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "author": "Hajji Tarik",
   "license": "ISC",
@@ -71,7 +73,8 @@
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
     "webpack": "^2.6.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "snyk": "^1.316.1"
   },
   "directories": {
     "example": "example"
@@ -84,5 +87,6 @@
   "bugs": {
     "url": "https://github.com/hajjiTarik/webpack-react-redux-boilerplate/issues"
   },
-  "homepage": "https://github.com/hajjiTarik/webpack-react-redux-boilerplate/#readme"
+  "homepage": "https://github.com/hajjiTarik/webpack-react-redux-boilerplate/#readme",
+  "snyk": true
 }
